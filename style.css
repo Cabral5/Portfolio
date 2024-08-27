@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(/fonts/Satoshi-Variable.ttf);
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url(/fonts/NeueMontreal-Medium.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Satoshi, sans-serif;
+}
+
+header {
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  position: fixed; /* Fixar o menu no topo */
+  width: 100%; /*Para o menu pegar a página toda*/
+  z-index: 1000; /* Colocar o menu acima dos outros elementos */
+}
+
+header h1 a {
+  color: #ec774c;
+  font-family: Neue, sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 27px;
+}
+
+header nav a {
+  color: #d3d3d3;
+  padding: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ec774c;
+}
+
+#inicio {
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  height: 85vh;
+}
+
+#inicio h2 {
+  color: white;
+  font-size: 29px;
+  text-align: left;
+  margin-bottom: -5%;
+}
+
+#inicio p {
+  color: #ec774c;
+  font-size: 22px;
+  line-height: 10%;
+}
+
+section h2 {
+  color: #ec774c;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+section p {
+  color: #929292;
+}
+
+#sobre {
+  background-color: #1f1f1f;
+  padding: 28px 108px 40px 108px;
+}
+
+.btn-curriculo {
+  display: inline-block;
+  background-color: transparent;
+  text-underline-offset: 4px;
+  color: #ec774c;
+  padding: 8px;
+  margin: 10px -5px;
+  /* border-radius: 7px; */
+  /* text-decoration: none; */
+}
+
+#skills {
+  background-color: #232323;
+  padding: 45px; /*Largura total da página Habilidades*/
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  align-items: center;
+  gap: 30px; /* Espaçamento entre os cards */
+}
+
+.tec {
+  display: flex; /*Sem esse display eu não consigo centralizar meu texto na moldura*/
+  flex-direction: column; /*Para o texto html, css etc ficarem abaixo da img*/
+  align-items: center; /*Para alinhar o texto abaixo com a img*/
+  background-color: #333; /* Cor de fundo da moldura do card */
+  padding: 10px; /*Largura da moldura*/
+  border-radius: 8px;
+  box-shadow: 0 1px 1.5px #ec774c; /*Sombra da moldura*/
+}
+
+#projects {
+  background-color: #1f1f1f;
+  padding: 24px;
+}
+
+#projects h2 {
+  margin-bottom: 40px;
+}
+
+.cards-projetos {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px; /*Espaçamento  em baixo*/
+  flex-wrap: wrap; /* Permite que os cards sejam quebrados em novas linhas */
+  max-width: 950px; /* Defina um limite de largura para o contêiner, ajustando conforme necessário */
+  margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.card {
+  display: flex; /*Sem esse display eu não consigo centralizar meu texto na moldura*/
+  flex-direction: column; /*Para o texto html, css etc ficarem abaixo da img*/
+  align-items: center; /*Para alinhar o texto abaixo com a img*/
+  background-color: #333; /* Cor de fundo da moldura do card */
+  padding: 15px; /*Largura da moldura*/
+  border-radius: 8px;
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  /* cursor: pointer; */
+}
+
+.card-text h3 {
+  color: #ec774c;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card-text p {
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.card-text a {
+  color: white;
+  background-color: transparent;
+  padding: 8px;
+  margin: 12px 12px;
+  border-radius: 7px;
+  text-decoration: none;
+  border: 1px solid #8c8c8c;
+}
+
+.card-text a:hover {
+  background-color: #ec774c;
+  transition: 10ms;
+}
+
+#contatos {
+  background-color: #232323;
+  padding: 24px;
+}
+
+.cont-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.cont {
+  display: flex; /*Sem esse display eu não consigo centralizar meu texto na moldura*/
+  flex-direction: column;
+  align-items: center; /*Para alinhar o texto abaixo com a img*/
+  background-color: #333; /* Cor de fundo da moldura do card */
+  padding: 15px; /*Largura da moldura*/
+  border-radius: 8px;
+  box-shadow: 0 1px 1.5px #ec774c; /*Sombra da moldura*/
+}
+
+.cont img:hover {
+  transform: scale(1.1);
+}
+
+.cont p {
+  /* color: white; */
+}
+
+footer {
+  background-color: #1f1f1f;
+  padding: 38px;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer a {
+  color: #ec774c;
+  text-decoration: none;
+}
